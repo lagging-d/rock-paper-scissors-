@@ -4,7 +4,7 @@
 // in the range of 1 - 120 was calculated and stored in randomNumber 
 // variable
 
-function getComputerChoice(randomNumber) {
+function getComputerChoice() {
 
     let randomNumber = Math.floor(Math.random() * 120) + 1;
 
@@ -16,10 +16,10 @@ function getComputerChoice(randomNumber) {
     } else return "scissors";
 }
 
-getComputerChoice(randomNumber);
+getComputerChoice();
 
 
-function getHumanChoice(humanChoice) {
+function getHumanChoice() {
 
     let humanChoice = prompt(`Do you SCISSOR? Do you ROCK? Or are you paper?`).toLowerCase();
 
@@ -28,10 +28,10 @@ function getHumanChoice(humanChoice) {
     } else return console.log(`The game is rock-scissors-paper!`) 
 }
 
-getHumanChoice(humanChoice);
+getHumanChoice();
 
-const humanSelection = getHumanChoice(humanChoice);
-const computerSelection = getComputerChoice(randomNumber);
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
 
 function playGame() {
