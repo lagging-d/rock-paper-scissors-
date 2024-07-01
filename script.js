@@ -40,3 +40,6 @@ function playRound(human, computer) {
         return `Human WINS`;
     }
 }
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
