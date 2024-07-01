@@ -36,7 +36,7 @@ function playGame() {
 
     function playRound(human, computer) {
         if (human === computer) {
-            return `DRAW`;
+            return console.log(`DRAW`);
         } else if (human === `rock` && computer === `paper` ||
                 human === `paper` && computer === `scissors` ||
                 human === `scissors` && computer === `rock`) {
