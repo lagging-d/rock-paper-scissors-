@@ -19,7 +19,7 @@ getComputerChoice(randomNumber);
 let humanChoice = prompt(`Do you SCISSOR? Do you ROCK? Or are you paper?`).toLowerCase();
 
 function getHumanChoice(humanChoice) {
-    if (humanChoice === `scissor` || humanChoice === `rock` || humanChoice === `paper`) {
+    if (humanChoice === `scissors` || humanChoice === `rock` || humanChoice === `paper`) {
         return humanChoice;
     } else return `The game is rock-scissors-paper!`  
 }
