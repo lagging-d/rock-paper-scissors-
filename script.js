@@ -22,3 +22,6 @@ function getHumanChoice(humanChoice) {
     } else return `The game is rock-scissors-paper!`  
 }
 
+let humanScore = 0;
+let computerScore = 0;
+
