@@ -18,9 +18,11 @@ function getComputerChoice(randomNumber) {
 
 getComputerChoice(randomNumber);
 
-let humanChoice = prompt(`Do you SCISSOR? Do you ROCK? Or are you paper?`).toLowerCase();
 
 function getHumanChoice(humanChoice) {
+
+    let humanChoice = prompt(`Do you SCISSOR? Do you ROCK? Or are you paper?`).toLowerCase();
+
     if (humanChoice === `scissors` || humanChoice === `rock` || humanChoice === `paper`) {
         return humanChoice;
     } else return console.log(`The game is rock-scissors-paper!`) 
