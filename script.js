@@ -26,8 +26,6 @@ function getHumanChoice(humanChoice) {
 
 getHumanChoice(humanChoice);
 
-let humanScore = 0;
-let computerScore = 0;
 
 function playRound(human, computer) {
     if (human === computer) {
@@ -48,8 +46,11 @@ function playRound(human, computer) {
 const humanSelection = getHumanChoice(humanChoice);
 const computerSelection = getComputerChoice(randomNumber);
 
-playRound(humanSelection, computerSelection);
 
 function playGame() {
-    
+    let humanScore = 0;
+    let computerScore = 0;
+
+    playRound(humanSelection, computerSelection);
+
 }
