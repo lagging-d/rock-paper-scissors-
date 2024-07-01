@@ -41,5 +41,5 @@ function playRound(human, computer) {
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+const humanSelection = getHumanChoice(humanChoice);
+const computerSelection = getComputerChoice(randomNumber);
