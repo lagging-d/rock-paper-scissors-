@@ -1,4 +1,3 @@
-let randomNumber = Math.floor(Math.random() * 120) + 1;
 
 
 // this function returns one of the strings based on what number
@@ -6,6 +5,9 @@ let randomNumber = Math.floor(Math.random() * 120) + 1;
 // variable
 
 function getComputerChoice(randomNumber) {
+
+    let randomNumber = Math.floor(Math.random() * 120) + 1;
+
 
     if (randomNumber <= 40 && randomNumber >= 1) {
         return "rock";
