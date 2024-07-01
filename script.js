@@ -25,3 +25,18 @@ function getHumanChoice(humanChoice) {
 let humanScore = 0;
 let computerScore = 0;
 
+function playRound(human, computer) {
+    if (human === computer) {
+        return `DRAW`;
+    } else if (human === `rock` && computer === `paper` ||
+            human === `paper` && computer === `scissors` ||
+            human === `scissors` && computer === `rock`) {
+        ++computerScore;
+        return `Computer WINS`;
+    } else if (human === `rock` && computer === `scissors` ||
+            human === `paper` && computer === `rock` ||
+            human === `scissors` && computer === `paper`) {
+        ++humanScore;
+        return `Human WINS`;
+    }
+}
