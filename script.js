@@ -49,3 +49,7 @@ const humanSelection = getHumanChoice(humanChoice);
 const computerSelection = getComputerChoice(randomNumber);
 
 playRound(humanSelection, computerSelection);
+
+function playGame() {
+    
+}
