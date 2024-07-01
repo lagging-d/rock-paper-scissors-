@@ -32,12 +32,12 @@ function playRound(human, computer) {
             human === `paper` && computer === `scissors` ||
             human === `scissors` && computer === `rock`) {
         ++computerScore;
-        return `Computer WINS`;
+        return console.log(`Computer WINS`);
     } else if (human === `rock` && computer === `scissors` ||
             human === `paper` && computer === `rock` ||
             human === `scissors` && computer === `paper`) {
         ++humanScore;
-        return `Human WINS`;
+        return console.log(`Human WINS`);
     }
 }
 
