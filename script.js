@@ -14,6 +14,8 @@ function getComputerChoice(randomNumber) {
     } else return "scissors";
 }
 
+getComputerChoice(randomNumber);
+
 let humanChoice = prompt(`Do you SCISSOR? Do you ROCK? Or are you paper?`).toLowerCase();
 
 function getHumanChoice(humanChoice) {
@@ -21,6 +23,8 @@ function getHumanChoice(humanChoice) {
         return humanChoice;
     } else return `The game is rock-scissors-paper!`  
 }
+
+getHumanChoice(humanChoice);
 
 let humanScore = 0;
 let computerScore = 0;
@@ -43,3 +47,5 @@ function playRound(human, computer) {
 
 const humanSelection = getHumanChoice(humanChoice);
 const computerSelection = getComputerChoice(randomNumber);
+
+playRound(humanSelection, computerSelection);
