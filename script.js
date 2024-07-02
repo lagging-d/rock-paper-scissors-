@@ -5,9 +5,11 @@
 // variable
 
 
-    let randomNumber = Math.floor(Math.random() * 120) + 1;
 
 function getComputerChoice() {
+
+    let randomNumber = Math.floor(Math.random() * 120) + 1;
+
     if (randomNumber <= 40 && randomNumber >= 1) {
         return "rock";
     } else if (randomNumber >= 41 && randomNumber <= 80) {
