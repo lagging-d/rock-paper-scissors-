@@ -4,11 +4,10 @@
 // in the range of 1 - 120 was calculated and stored in randomNumber 
 // variable
 
-function getComputerChoice() {
 
     let randomNumber = Math.floor(Math.random() * 120) + 1;
 
-
+function getComputerChoice() {
     if (randomNumber <= 40 && randomNumber >= 1) {
         return "rock";
     } else if (randomNumber >= 41 && randomNumber <= 80) {
@@ -16,7 +15,6 @@ function getComputerChoice() {
     } else return "scissors";
 }
 
-getComputerChoice();
 
 
 function getHumanChoice() {
@@ -28,7 +26,6 @@ function getHumanChoice() {
     } else return console.log(`The game is rock-scissors-paper!`) 
 }
 
-getHumanChoice();
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
@@ -39,6 +36,8 @@ function playGame() {
     let computerScore = 0;
 
     function playRound(human, computer) {
+
+
         if (human === computer) {
             return console.log(`DRAW`);
         } else if (human === `rock` && computer === `paper` ||
@@ -55,11 +54,24 @@ function playGame() {
     }
 
     playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
+    getComputerChoice();
+    getHumanChoice();
 
+    playRound(humanSelection, computerSelection);
+    getComputerChoice();
+    getHumanChoice();
+
+    playRound(humanSelection, computerSelection);
+    getComputerChoice();
+    getHumanChoice();
+
+    playRound(humanSelection, computerSelection);
+    getComputerChoice();
+    getHumanChoice();
+
+    playRound(humanSelection, computerSelection);
+    getComputerChoice();
+    getHumanChoice();
 }
 
 playGame();
