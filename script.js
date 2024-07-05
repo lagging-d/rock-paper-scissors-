@@ -57,6 +57,7 @@ function playGame() {
     playRound(getHumanChoice(), getComputerChoice());
     playRound(getHumanChoice(), getComputerChoice());
   
+    console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
 }
 
 playGame();
