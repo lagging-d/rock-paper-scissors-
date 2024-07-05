@@ -21,11 +21,11 @@ function getComputerChoice() {
 
 function getHumanChoice() {
 
-    let humanChoice = prompt(`Do you SCISSOR? Do you ROCK? Or are you paper?`).toLowerCase();
+    let humanChoice = prompt(`Do you SCISSORs? Do you ROCK? Or are you paper?`).toLowerCase();
 
     if (humanChoice === `scissors` || humanChoice === `rock` || humanChoice === `paper`) {
         return humanChoice;
-    } else return console.log(`The game is rock-scissors-paper!`) 
+    } else return console.log(`The game is ROCK-PAPER-SCISSORS!`) 
 }
 
 
