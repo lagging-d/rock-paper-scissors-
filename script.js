@@ -29,10 +29,6 @@ function getHumanChoice() {
 }
 
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
@@ -56,24 +52,11 @@ function playGame() {
     }
 
     playRound(getHumanChoice(), getComputerChoice());
-    getComputerChoice();
-    getHumanChoice();
-
     playRound(getHumanChoice(), getComputerChoice());
-    getComputerChoice();
-    getHumanChoice();
-
     playRound(getHumanChoice(), getComputerChoice());
-    getComputerChoice();
-    getHumanChoice();
-
     playRound(getHumanChoice(), getComputerChoice());
-    getComputerChoice();
-    getHumanChoice();
-
     playRound(getHumanChoice(), getComputerChoice());
-    getComputerChoice();
-    getHumanChoice();
+  
 }
 
 playGame();
