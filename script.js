@@ -52,26 +52,26 @@ function playGame() {
                 human === `scissors` && computer === `paper`) {
             ++humanScore;
             return console.log(`Human WINS`);
-        }
+        } else return console.log(`INVALID`)
     }
 
-    playRound(humanSelection, computerSelection);
+    playRound(getHumanChoice(), getComputerChoice());
     getComputerChoice();
     getHumanChoice();
 
-    playRound(humanSelection, computerSelection);
+    playRound(getHumanChoice(), getComputerChoice());
     getComputerChoice();
     getHumanChoice();
 
-    playRound(humanSelection, computerSelection);
+    playRound(getHumanChoice(), getComputerChoice());
     getComputerChoice();
     getHumanChoice();
 
-    playRound(humanSelection, computerSelection);
+    playRound(getHumanChoice(), getComputerChoice());
     getComputerChoice();
     getHumanChoice();
 
-    playRound(humanSelection, computerSelection);
+    playRound(getHumanChoice(), getComputerChoice());
     getComputerChoice();
     getHumanChoice();
 }
