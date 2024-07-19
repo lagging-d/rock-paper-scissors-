@@ -1,12 +1,15 @@
+const btnRock = querySelector("#rock");
+const btnPaper = querySelector("#paper");
+const btnScissors = querySelector("#scissors");
+
+
+
+function getComputerChoice() {
 
 
 // this function returns one of the strings based on what number
 // in the range of 1 - 120 was calculated and stored in randomNumber 
 // variable
-
-
-
-function getComputerChoice() {
 
     let randomNumber = Math.floor(Math.random() * 120) + 1;
 
@@ -51,11 +54,11 @@ function playGame() {
         } else return console.log(`INVALID`)
     }
 
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
+    //playRound(getHumanChoice(), getComputerChoice());
+    //playRound(getHumanChoice(), getComputerChoice());
+    //playRound(getHumanChoice(), getComputerChoice());
+    //playRound(getHumanChoice(), getComputerChoice());
+    //playRound(getHumanChoice(), getComputerChoice());
   
     console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
 }
