@@ -1,6 +1,6 @@
-const btnRock = querySelector("#rock");
-const btnPaper = querySelector("#paper");
-const btnScissors = querySelector("#scissors");
+const btnRock = document.querySelector("#rock");
+const btnPaper = document.querySelector("#paper");
+const btnScissors = document.querySelector("#scissors");
 
 
 
