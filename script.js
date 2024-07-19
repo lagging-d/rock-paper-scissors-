@@ -3,6 +3,14 @@ const btnPaper = document.querySelector("#paper");
 const btnScissors = document.querySelector("#scissors");
 const btnContainer = document.querySelector("btnContainer");
 
+btnContainer.addEventListener(`click`, (event) => {
+    let target = event.target;
+
+    switch(target.id) {
+        case `rock`:
+            
+    }
+})
 
 function getComputerChoice() {
 
