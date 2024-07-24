@@ -3,21 +3,6 @@ const btnPaper = document.querySelector("#paper");
 const btnScissors = document.querySelector("#scissors");
 const btnContainer = document.querySelector(".btnContainer");
 
-btnContainer.addEventListener(`click`, (event) => {
-    let target = event.target;
-
-    switch(target.id) {
-        case `rock`:
-            playRound(`rock`, getComputerChoice());
-            break;
-        case `paper`:
-            playRound(`paper`, getComputerChoice());
-            break;
-        case `scissors`:
-            playRound(`scissors`, getComputerChoice());
-            break;
-    }
-})
 
 function getComputerChoice() {
 
@@ -38,6 +23,23 @@ function getComputerChoice() {
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
+
+
+    btnContainer.addEventListener(`click`, (event) => {
+        let target = event.target;
+    
+        switch(target.id) {
+            case `rock`:
+                playRound(`rock`, getComputerChoice());
+                break;
+            case `paper`:
+                playRound(`paper`, getComputerChoice());
+                break;
+            case `scissors`:
+                playRound(`scissors`, getComputerChoice());
+                break;
+        }
+    })
 
     function playRound(human, computer) {
 
