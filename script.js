@@ -3,6 +3,7 @@ const btnPaper = document.querySelector("#paper");
 const btnScissors = document.querySelector("#scissors");
 const btnContainer = document.querySelector(".btnContainer");
 const resultContainer = document.querySelector(".resultContainer");
+const scoreDisplay = document.querySelector(".scoreDisplay");
 
 // this function returns one of the strings based on what number
 // in the range of 1 - 120 was calculated and stored in randomNumber 
@@ -37,11 +38,17 @@ function playGame() {
                     break;
                 case `paper`:
                     playRound(`paper`, getComputerChoice());
+                    console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
                     break;
                 case `scissors`:
                     playRound(`scissors`, getComputerChoice());
+                    console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
                     break;
             }
+        } else if (clickCount > 5) {
+            const score = document.createElement(`div`);
+            score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+            scoreDisplay.appendChild(score);
         }
         
     })
@@ -67,8 +74,6 @@ function playGame() {
             resultContainer.appendChild(humanWin);
         } else return console.log(`INVALID`)
     }
-  
-    console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
 }
 
 playGame();
