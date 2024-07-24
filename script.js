@@ -58,7 +58,9 @@ function playGame() {
                 human === `paper` && computer === `rock` ||
                 human === `scissors` && computer === `paper`) {
             ++humanScore;
-            return console.log(`Human WINS`);
+            const humanWin = document.createElement(`div`);
+            humanWin.textContent = `Human WINS!`;
+            resultContainer.appendChild(humanWin);
         } else return console.log(`INVALID`)
     }
 
