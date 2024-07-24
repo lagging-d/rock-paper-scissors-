@@ -31,27 +31,24 @@ function playGame() {
         ++clickCount;
         console.log(clickCount);
 
-        if (clickCount <= 5) {
             switch(target.id) {
                 case `rock`:
                     playRound(`rock`, getComputerChoice());
                     break;
                 case `paper`:
-                    playRound(`paper`, getComputerChoice());
-                    console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
-                    break;
+                    playRound(`paper`, getComputerChoice());                    break;
                 case `scissors`:
                     playRound(`scissors`, getComputerChoice());
-                    console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
                     break;
             }
-        } else if (clickCount > 5) {
+        
+         if (clickCount === 5) { 
             const score = document.createElement(`div`);
             score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
             scoreDisplay.appendChild(score);
-        }
-        
+         }
     })
+
 
     function playRound(human, computer) {
         if (human === computer) {
