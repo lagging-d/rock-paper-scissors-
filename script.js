@@ -4,12 +4,11 @@ const btnScissors = document.querySelector("#scissors");
 const btnContainer = document.querySelector(".btnContainer");
 
 
-function getComputerChoice() {
-
-
 // this function returns one of the strings based on what number
 // in the range of 1 - 120 was calculated and stored in randomNumber 
 // variable
+
+function getComputerChoice() {
 
     let randomNumber = Math.floor(Math.random() * 120) + 1;
 
