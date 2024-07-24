@@ -65,12 +65,6 @@ function playGame() {
             resultContainer.appendChild(humanWin);
         } else return console.log(`INVALID`)
     }
-
-    //playRound(getHumanChoice(), getComputerChoice());
-    //playRound(getHumanChoice(), getComputerChoice());
-    //playRound(getHumanChoice(), getComputerChoice());
-    //playRound(getHumanChoice(), getComputerChoice());
-    //playRound(getHumanChoice(), getComputerChoice());
   
     console.log(`Human: ${humanScore} | Computer: ${computerScore}`)
 }
