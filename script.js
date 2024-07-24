@@ -2,7 +2,7 @@ const btnRock = document.querySelector("#rock");
 const btnPaper = document.querySelector("#paper");
 const btnScissors = document.querySelector("#scissors");
 const btnContainer = document.querySelector(".btnContainer");
-
+const resultContainer = document.querySelector(".resultContainer");
 
 // this function returns one of the strings based on what number
 // in the range of 1 - 120 was calculated and stored in randomNumber 
@@ -44,7 +44,9 @@ function playGame() {
 
 
         if (human === computer) {
-            return console.log(`DRAW`);
+            const draw = document.createElement(`div`);
+            draw.textContent = `DRAW!`;
+            document.resultContainer.appendChild(draw);
         } else if (human === `rock` && computer === `paper` ||
                 human === `paper` && computer === `scissors` ||
                 human === `scissors` && computer === `rock`) {
