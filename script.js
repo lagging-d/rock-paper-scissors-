@@ -31,6 +31,8 @@ function playGame() {
         ++clickCount;
         console.log(clickCount);
 
+        if (clickCount < 5) { 
+            
             switch(target.id) {
                 case `rock`:
                     playRound(`rock`, getComputerChoice());
@@ -41,6 +43,7 @@ function playGame() {
                     playRound(`scissors`, getComputerChoice());
                     break;
             }
+        }
         
          if (clickCount === 5) { 
             const score = document.createElement(`div`);
