@@ -22,11 +22,13 @@ function getComputerChoice() {
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
-
+    let clickCount = 0;
 
     btnContainer.addEventListener(`click`, (event) => {
         let target = event.target;
-    
+        ++clickCount;
+        console.log(clickCount);
+
         switch(target.id) {
             case `rock`:
                 playRound(`rock`, getComputerChoice());
