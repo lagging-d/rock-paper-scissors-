@@ -8,7 +8,7 @@ btnContainer.addEventListener(`click`, (event) => {
 
     switch(target.id) {
         case `rock`:
-            playRound(getHumanChoice(), getComputerChoice())
+            playRound(`rock`, getComputerChoice())
     }
 })
 
@@ -27,13 +27,6 @@ function getComputerChoice() {
         return "paper";
     } else return "scissors";
 }
-
-
-
-function getHumanChoice() {
-
-    
-
 
 function playGame() {
     let humanScore = 0;
