@@ -46,13 +46,14 @@ function playGame() {
         if (human === computer) {
             const draw = document.createElement(`div`);
             draw.textContent = `DRAW!`;
-            draw.classList.add(`result`);
             resultContainer.appendChild(draw);
         } else if (human === `rock` && computer === `paper` ||
                 human === `paper` && computer === `scissors` ||
                 human === `scissors` && computer === `rock`) {
             ++computerScore;
-            return console.log(`Computer WINS`);
+            const compWin = document.createElement(`div`);
+            compWin.textContent = `Computer WINS!`;
+            resultContainer.appendChild(compWin);
         } else if (human === `rock` && computer === `scissors` ||
                 human === `paper` && computer === `rock` ||
                 human === `scissors` && computer === `paper`) {
