@@ -19,6 +19,7 @@ function getComputerChoice() {
     } else return "scissors";
 }
 
+
 function playGame() {
     let humanScore = 0;
     let computerScore = 0;
@@ -29,22 +30,23 @@ function playGame() {
         ++clickCount;
         console.log(clickCount);
 
-        switch(target.id) {
-            case `rock`:
-                playRound(`rock`, getComputerChoice());
-                break;
-            case `paper`:
-                playRound(`paper`, getComputerChoice());
-                break;
-            case `scissors`:
-                playRound(`scissors`, getComputerChoice());
-                break;
+        if (clickCount <= 5) {
+            switch(target.id) {
+                case `rock`:
+                    playRound(`rock`, getComputerChoice());
+                    break;
+                case `paper`:
+                    playRound(`paper`, getComputerChoice());
+                    break;
+                case `scissors`:
+                    playRound(`scissors`, getComputerChoice());
+                    break;
+            }
         }
+        
     })
 
     function playRound(human, computer) {
-
-
         if (human === computer) {
             const draw = document.createElement(`div`);
             draw.textContent = `DRAW!`;
