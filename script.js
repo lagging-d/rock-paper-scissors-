@@ -46,7 +46,8 @@ function playGame() {
         if (human === computer) {
             const draw = document.createElement(`div`);
             draw.textContent = `DRAW!`;
-            document.resultContainer.appendChild(draw);
+            draw.classList.add(`result`);
+            resultContainer.appendChild(draw);
         } else if (human === `rock` && computer === `paper` ||
                 human === `paper` && computer === `scissors` ||
                 human === `scissors` && computer === `rock`) {
