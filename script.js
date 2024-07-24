@@ -1,14 +1,14 @@
 const btnRock = document.querySelector("#rock");
 const btnPaper = document.querySelector("#paper");
 const btnScissors = document.querySelector("#scissors");
-const btnContainer = document.querySelector("btnContainer");
+const btnContainer = document.querySelector(".btnContainer");
 
 btnContainer.addEventListener(`click`, (event) => {
     let target = event.target;
 
     switch(target.id) {
         case `rock`:
-            
+            playRound(getHumanChoice(), getComputerChoice())
     }
 })
 
@@ -32,12 +32,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
 
-    let humanChoice = prompt(`Do you SCISSORs? Do you ROCK? Or are you paper?`).toLowerCase();
-
-    if (humanChoice === `scissors` || humanChoice === `rock` || humanChoice === `paper`) {
-        return humanChoice;
-    } else return console.log(`The game is ROCK-PAPER-SCISSORS!`) 
-}
+    
 
 
 function playGame() {
